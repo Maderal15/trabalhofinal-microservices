@@ -23,7 +23,7 @@ public class TransactionService {
 
 	public Transactions save(Transactions transaction) {
 
-		if (System.currentTimeMillis() - transaction.getTimestamp() >= 60000) {
+		if (System.currentTimeMillis() - transaction.getTimestamp() > 60000) {
 			throw new TransactionException("");
 		}
 

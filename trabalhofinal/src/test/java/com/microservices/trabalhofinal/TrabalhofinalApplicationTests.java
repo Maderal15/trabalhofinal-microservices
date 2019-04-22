@@ -51,7 +51,7 @@ public class TrabalhofinalApplicationTests {
     
  	@Test
  	public void naoAchouNadaTest() throws Exception {
- 		mockMvc.perform(get("/transactions/1")).andExpect(status().isNotFound());
+ 		mockMvc.perform(get("/statistics/1")).andExpect(status().isNotFound());
  	}
     
     @Test
