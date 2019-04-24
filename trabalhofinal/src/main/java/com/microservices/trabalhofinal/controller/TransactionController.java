@@ -41,7 +41,7 @@ public class TransactionController {
     @PostMapping("/transactions")
     public ResponseEntity save(@RequestBody @Valid Transactions transaction){
 
-    	transaction = transactionService.save(transaction);
+    	transactionService.save(transaction);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(null);
     }
@@ -49,7 +49,7 @@ public class TransactionController {
 	@ApiOperation(httpMethod = "GET", value = "Metodo GET faz os calcalos dos 60 segundos")
     @ApiResponses(value = {
         @ApiResponse(
-            code = 200,  message = "Retorna uma messagem de sucesso",  response = Statistic.class
+            code = 200,  message = "Retorna um Statistics",  response = Statistic.class
         )
     })
 	@GetMapping("/statistics")
