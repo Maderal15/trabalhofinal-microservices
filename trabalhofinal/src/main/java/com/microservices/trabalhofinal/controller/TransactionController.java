@@ -43,7 +43,7 @@ public class TransactionController {
 
     	transactionService.save(transaction);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(null);
+        return ResponseEntity.status(HttpStatus.CREATED).body("");
     }
     
 	@ApiOperation(httpMethod = "GET", value = "Metodo GET faz os calcalos dos 60 segundos")
