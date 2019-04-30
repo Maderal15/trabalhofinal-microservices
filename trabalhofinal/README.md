@@ -1,7 +1,7 @@
-﻿#Trabalho de Microservices
+﻿# Trabalho de Microservices
 
 
-#Documento
+# Documento
 ```sh
 http://localhost:8080/swagger-ui.html
 
@@ -18,12 +18,10 @@ GET
   http://localhost:8090/statistics
 
 ```
-#Build do docker
+# Build do docker
 ```sh
 docker build -t danilo/trabalhofinal .
 ```
-
-
 # Executar essas duas instancias 
 
 ```sh
